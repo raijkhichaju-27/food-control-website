@@ -140,53 +140,58 @@ body {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
+/* Tools Section Title */
 .tools-section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+
   font-size: 2.5rem;
   font-weight: bold;
   color: var(--dark-text);
   margin-bottom: 1rem;
   position: relative;
-  display: inline-block;
-  left: 28.5%;
-  transform: translateX(-50%);
 }
 
 .tools-section-title::after {
   content: "";
   position: absolute;
   bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100px;
   height: 4px;
   background: var(--secondary-color);
   border-radius: 2px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+/* Services Section Title */
 .services-section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+
   font-size: 2.5rem;
   font-weight: bold;
   color: var(--dark-text);
   margin-bottom: 1rem;
   position: relative;
-  display: inline-block;
-  left: 40%;
-  transform: translateX(-50%);
 }
 
 .services-section-title::after {
   content: "";
   position: absolute;
   bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100px;
   height: 4px;
   background: var(--secondary-color);
   border-radius: 2px;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 
 .section-subtitle {
   text-align: center;
