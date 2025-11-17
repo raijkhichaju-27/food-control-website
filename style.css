@@ -487,3 +487,13 @@ footer {
     margin: 20px;
   }
 }
+
+.tools-portal .section-title {
+    text-align: center;
+    width: 100%;
+}
+
+.tools-portal .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
