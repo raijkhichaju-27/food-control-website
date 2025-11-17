@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Control - Training & Compliance Solutions</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-shield-alt"></i> FOOD CONTROL
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tools">Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stats">Statistics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content" data-aos="fade-up">
+        <h1>Expert Food Safety Solutions</h1>
+        <p>
+          Empower your team with industry-leading training programs and advanced
+          calculation tools
+        </p>
+        <button class="cta-button" onclick="scrollToTools()">
+          Explore Our Tools <i class="fas fa-arrow-right ms-2"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Tools Portal Section -->
+    <section class="tools-portal" id="tools">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+          Professional Calculation Tools
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Advanced calculators designed for dairy and food processing
+          professionals
+        </p>
+
+        <div class="row">
+          <!-- Milk Standardization Calculator -->
+          <div
+            class="col-lg-6 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="tool-card" onclick="openCalculator()">
+              <div class="text-center">
+                <i class="fas fa-glass-whiskey tool-icon"></i>
+              </div>
+              <h3>Milk Standardization Calculator</h3>
+              <p>
+                Professional Pearson Square method calculator for precise milk
+                fat standardization. Calculate the exact amount of skim milk
+                needed to achieve your target fat percentage.
+              </p>
+              <div class="mb-3">
+                <span class="tool-badge"
+                  ><i class="fas fa-calculator"></i> Pearson Square</span
+                >
+                <span class="tool-badge"
+                  ><i class="fas fa-check"></i> Verified</span
+                >
+                <span class="tool-badge"
+                  ><i class="fas fa-print"></i> Printable</span
+                >
+              </div>
+              <button class="launch-btn">
+                Launch Calculator <i class="fas fa-external-link-alt ms-2"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Placeholder for future tools -->
+          <div
+            class="col-lg-6 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="tool-card" style="opacity: 0.7">
+              <div class="text-center">
+                <i class="fas fa-thermometer-half tool-icon"></i>
+              </div>
+              <h3>Pasteurization Time Calculator</h3>
+              <p>
+                Calculate precise pasteurization times and temperatures for
+                various dairy products based on international standards.
+              </p>
+              <div class="mb-3">
+                <span class="tool-badge" style="background: #95a5a6"
+                  ><i class="fas fa-clock"></i> Coming Soon</span
+                >
+              </div>
+              <button class="launch-btn" disabled style="opacity: 0.5">
+                Coming Soon
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-6 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="tool-card" style="opacity: 0.7">
+              <div class="text-center">
+                <i class="fas fa-flask tool-icon"></i>
+              </div>
+              <h3>pH & Acidity Calculator</h3>
+              <p>
+                Advanced calculator for determining optimal pH levels and
+                acidity measurements in dairy products and fermentation
+                processes.
+              </p>
+              <div class="mb-3">
+                <span class="tool-badge" style="background: #95a5a6"
+                  ><i class="fas fa-clock"></i> Coming Soon</span
+                >
+              </div>
+              <button class="launch-btn" disabled style="opacity: 0.5">
+                Coming Soon
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-6 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="tool-card" style="opacity: 0.7">
+              <div class="text-center">
+                <i class="fas fa-balance-scale tool-icon"></i>
+              </div>
+              <h3>Batch Mixing Calculator</h3>
+              <p>
+                Calculate ingredient proportions for large-scale production
+                batches with precision and efficiency.
+              </p>
+              <div class="mb-3">
+                <span class="tool-badge" style="background: #95a5a6"
+                  ><i class="fas fa-clock"></i> Coming Soon</span
+                >
+              </div>
+              <button class="launch-btn" disabled style="opacity: 0.5">
+                Coming Soon
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Comprehensive food safety and compliance solutions
+        </p>
+
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="service-card">
+              <i class="fas fa-clipboard-check"></i>
+              <h3>HACCP Training</h3>
+              <p>
+                Comprehensive Hazard Analysis and Critical Control Points
+                training for food safety managers and quality assurance
+                professionals.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="service-card">
+              <i class="fas fa-industry"></i>
+              <h3>GMP Compliance</h3>
+              <p>
+                Good Manufacturing Practices training and consulting to ensure
+                your facility meets all regulatory requirements.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="service-card">
+              <i class="fas fa-search"></i>
+              <h3>Audit Support</h3>
+              <p>
+                Prepare your team for internal and external audits with our
+                comprehensive preparation services.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="service-card">
+              <i class="fas fa-cogs"></i>
+              <h3>Quality Systems</h3>
+              <p>
+                Implementation and optimization of quality management systems
+                for food processing operations.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="service-card">
+              <i class="fas fa-gavel"></i>
+              <h3>Regulatory Guidance</h3>
+              <p>
+                Stay compliant with FDA, USDA, and international food safety
+                standards.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            <div class="service-card">
+              <i class="fas fa-puzzle-piece"></i>
+              <h3>Custom Programs</h3>
+              <p>
+                Tailored training solutions designed for your organization's
+                unique challenges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="stat-item">
+              <h2 class="counter" data-target="500">0</h2>
+              <p>Companies Trained</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="stat-item">
+              <h2 class="counter" data-target="15000">0</h2>
+              <p>Professionals Certified</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="stat-item">
+              <h2 class="counter" data-target="98">0</h2>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="stat-item">
+              <h2 class="counter" data-target="20">0</h2>
+              <p>Years Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="footer-section">
+              <h3><i class="fas fa-shield-alt"></i> Food Control</h3>
+              <p>
+                Leading provider of food safety training and compliance
+                solutions for the food industry worldwide.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="footer-section">
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="#services"
+                    ><i class="fas fa-angle-right"></i> Our Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#tools"
+                    ><i class="fas fa-angle-right"></i> Calculation Tools</a
+                  >
+                </li>
+                <li>
+                  <a href="#stats"
+                    ><i class="fas fa-angle-right"></i> Statistics</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact"
+                    ><i class="fas fa-angle-right"></i> Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="footer-section">
+              <h3>Contact</h3>
+              <ul>
+                <li>
+                  <a href="mailto:info@foodcontrol.com"
+                    ><i class="fas fa-envelope"></i> info@foodcontrol.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+1234567890"
+                    ><i class="fas fa-phone"></i> +0000000000</a
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i> 123 Lorem, ipsum. Lorem,
+                  ipsum dolor.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy; 2025 Food Control. All rights reserved. | Built with
+            excellence
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Calculator Modal -->
+    <div class="calculator-modal" id="calculatorModal">
+      <div class="calculator-content">
+        <div class="modal-header">
+          <h2>
+            <i class="fas fa-calculator"></i> Milk Standardization Calculator
+          </h2>
+          <button class="close-modal" onclick="closeCalculator()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="calculator-body">
+          <div class="row">
+            <!-- Input Section -->
+            <div class="col-lg-6">
+              <h4 class="mb-4"><i class="fas fa-edit"></i> Input Parameters</h4>
+
+              <div class="calc-input-group">
+                <label><i class="fas fa-user"></i> User Name *</label>
+                <input
+                  type="text"
+                  id="userName"
+                  placeholder="Enter your name"
+                />
+              </div>
+
+              <div class="calc-input-group">
+                <label><i class="fas fa-building"></i> Company Name *</label>
+                <input
+                  type="text"
+                  id="companyName"
+                  placeholder="Enter company name"
+                />
+              </div>
+
+              <div class="calc-input-group">
+                <label
+                  ><i class="fas fa-percentage"></i> Raw Milk Fat % *</label
+                >
+                <input
+                  type="number"
+                  id="rawFat"
+                  value="4.0"
+                  step="0.1"
+                  min="0"
+                  max="10"
+                />
+              </div>
+
+              <div class="calc-input-group">
+                <label
+                  ><i class="fas fa-percentage"></i> Skim Milk Fat % *</label
+                >
+                <input
+                  type="number"
+                  id="skimFat"
+                  value="0.2"
+                  step="0.1"
+                  min="0"
+                  max="2"
+                />
+              </div>
+
+              <div class="calc-input-group">
+                <label><i class="fas fa-bullseye"></i> Target Fat % *</label>
+                <input
+                  type="number"
+                  id="targetFat"
+                  value="3.0"
+                  step="0.1"
+                  min="0"
+                  max="10"
+                />
+              </div>
+
+              <div class="calc-input-group">
+                <label
+                  ><i class="fas fa-tint"></i> Raw Milk Volume (Liters) *</label
+                >
+                <input
+                  type="number"
+                  id="rawVolume"
+                  value="1000"
+                  step="1"
+                  min="0"
+                />
+              </div>
+
+              <div class="d-grid gap-2">
+                <button
+                  class="btn btn-primary btn-lg"
+                  onclick="calculateStandardization()"
+                >
+                  <i class="fas fa-calculator"></i> Calculate
+                </button>
+                <button class="btn btn-secondary" onclick="resetCalculator()">
+                  <i class="fas fa-redo"></i> Reset
+                </button>
+              </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="col-lg-6">
+              <h4 class="mb-4"><i class="fas fa-chart-line"></i> Results</h4>
+
+              <div
+                class="calc-results"
+                id="resultsSection"
+                style="display: none"
+              >
+                <div class="result-box">
+                  <div class="result-label">User Information</div>
+                  <div id="userInfo" style="color: #666; font-size: 1rem"></div>
+                </div>
+
+                <div class="result-box">
+                  <div class="result-label">Skim Milk Required</div>
+                  <div class="result-value" id="skimVolume">0 L</div>
+                </div>
+
+                <div class="result-box">
+                  <div class="result-label">Total Standardized Milk</div>
+                  <div class="result-value" id="totalVolume">0 L</div>
+                </div>
+
+                <div class="result-box">
+                  <div class="result-label">Mixing Ratio (Raw:Skim)</div>
+                  <div
+                    class="result-value"
+                    id="mixingRatio"
+                    style="font-size: 1.5rem"
+                  >
+                    0:0
+                  </div>
+                </div>
+
+                <button
+                  class="btn btn-success w-100 mt-3"
+                  onclick="printCalculation()"
+                >
+                  <i class="fas fa-print"></i> Print Results
+                </button>
+              </div>
+
+              <div id="noResults" class="text-center p-5" style="color: #999">
+                <i
+                  class="fas fa-info-circle"
+                  style="font-size: 3rem; margin-bottom: 20px"
+                ></i>
+                <p>Enter your parameters and click Calculate to see results</p>
+              </div>
+
+              <!-- Visual Diagram -->
+              <div id="diagramSection" style="display: none; margin-top: 30px">
+                <h5 class="text-center mb-3">Pearson Square Visualization</h5>
+                <div class="row text-center">
+                  <div class="col-4">
+                    <div
+                      style="
+                        padding: 15px;
+                        background: linear-gradient(
+                          135deg,
+                          #667eea 0%,
+                          #764ba2 100%
+                        );
+                        color: white;
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+                      "
+                    >
+                      <strong>Raw Milk</strong>
+                      <div
+                        id="rawDisplay"
+                        style="font-size: 1.5rem; font-weight: bold"
+                      >
+                        4.0%
+                      </div>
+                      <div id="rawVolumeDisplay">1000 L</div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div
+                      style="
+                        padding: 15px;
+                        background: linear-gradient(
+                          135deg,
+                          #27ae60 0%,
+                          #2ecc71 100%
+                        );
+                        color: white;
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+                      "
+                    >
+                      <strong>Target Milk</strong>
+                      <div
+                        id="targetDisplay"
+                        style="font-size: 1.5rem; font-weight: bold"
+                      >
+                        3.0%
+                      </div>
+                      <div id="targetVolumeDisplay">0 L</div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div
+                      style="
+                        padding: 15px;
+                        background: linear-gradient(
+                          135deg,
+                          #3498db 0%,
+                          #2980b9 100%
+                        );
+                        color: white;
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+                      "
+                    >
+                      <strong>Skim Milk</strong>
+                      <div
+                        id="skimDisplay"
+                        style="font-size: 1.5rem; font-weight: bold"
+                      >
+                        0.2%
+                      </div>
+                      <div id="skimVolumeDisplay">0 L</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>
