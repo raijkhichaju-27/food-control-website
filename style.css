@@ -147,9 +147,9 @@ body {
   color: var(--dark-text);
   margin-bottom: 1rem;
   position: relative;
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
+  display: block;
+  left: auto;
+  transform: none;
 }
 
 .section-title::after {
@@ -497,3 +497,4 @@ footer {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
